@@ -9,7 +9,7 @@ class SocketService with ChangeNotifier {
 
   // * No entiendo muy bien la parte de colocar este código repetido aquí arriba pero
   // * si lo quito me marca error.
-  IO.Socket _socket = IO.io('http://192.168.100.154:3000/', {
+  IO.Socket _socket = IO.io('https://band-names-socket-server.onrender.com/', {
       'transports': ['websocket'],
       'autoConnect' : true
     });
@@ -27,7 +27,7 @@ class SocketService with ChangeNotifier {
 
     // * Esta es la otra parte donde se repite el código de arriba
     // Dart client
-    _socket = IO.io('http://192.168.100.154:3000/', {
+    _socket = IO.io('https://band-names-socket-server.onrender.com/', {
       'transports': ['websocket'],
       'autoConnect' : true
     });
